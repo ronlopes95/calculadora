@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Calculadora - Ron Lopes</title>
-    <meta name="description" content="Calculadora básica - Ron Lopes">
-    <meta name="author" content="Ron Lopes">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Calculadora, Calculator, Projeto, Pessoal">
+    <title>Calculadora - Ron Lopess</title>
+    <meta name="description" content="Calculadora básica - Ron Lopes" />
+    <meta name="author" content="Ron Lopes" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Calculadora, Calculator, Projeto, Pessoal"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./content/Calculator-fav-icon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./content/Calculator-fav-icon.png"
+    />
     <script src="scripts.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="fundo">
-        <header class="centralizar">
-            <h1>Ron Lopes</h1>
-        </header>
-        
-        <section class="centralizar">
-            <div class="calculadora centralizar">
-                <h2>Calculadora</h2>
-                <p id="resultado"></p>
-                <table>
-                    <tr>
-                        <td><button onclick="clean()">C</button></td>
-                        <td><button onclick="back()">&lt;</button></td>
-                        <td><button onclick="insert('/')">&#247;</button></td>
-                        <td><button onclick="insert('*')">X</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="insert('7')">7</button></td>
-                        <td><button onclick="insert('8')">8</button></td>
-                        <td><button onclick="insert('9')">9</button></td>
-                        <td><button onclick="insert('-')">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="insert('4')">4</button></td>
-                        <td><button onclick="insert('5')">5</button></td>
-                        <td><button onclick="insert('6')">6</button></td>
-                        <td><button onclick="insert('+')">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="insert('1')">1</button></td>
-                        <td><button onclick="insert('2')">2</button></td>
-                        <td><button onclick="insert('3')">3</button></td>
-                        <td class="buttonBarra" rowspan="2"><button onclick="calcular()">=</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button onclick="insert('0')">0</button></td>
-                        <td><button onclick="insert('.')">.</button></td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+      <header class="centralizar">
+        <h1>Ron Lopes</h1>
+      </header>
 
-        <section>
-            <h3>
-                Curiosidades:
-            </h3>
-                <div class="triviaTextos">
-                    <p id="ondeSeraExibido">"A primeira calculadora mecânica foi inventada por Blaise Pascal, um matemático francês, quando ele tinha 19 anos em 1642, para ajudar seu pai a calcular somas matemáticas."</p>
-                    <p class="cur">"A primeira calculadora mecânica foi inventada por Blaise Pascal, um matemático francês, quando ele tinha 19 anos em 1642, para ajudar seu pai a calcular somas matemáticas."</p>
-                    <p class="cur">"A primeira calculadora de mão foi inventada pela Texas Instruments, uma empresa americana, em 1967, e foi desenvolvclassa no início dos anos 1970."</p>
-                    <p class="cur">"Os alunos da escola são usuários comuns de calculadoras, usando-as para calcular somas difíceis, embora alguns digam que as crianças são muito dependentes dos dispositivos."</p>
-                    <p class="cur">"As calculadoras geralmente são alimentadas com energia química ou de bateria, energia solar ou energia elétrica."</p>
-                    <p class="cur">"Os tipos de calculadoras variam de pequenas de bolso a grandes e pesadas que podem imprimir os cálculos."</p>
-                    <p class="cur">"Os <em>ábacos</em> foram os primeiros tipos de calculadoras, auxiliando a pessoa que estava calculando, mas nos países ocidentais, as calculadoras eletrônicas são quase sempre usadas."</p>
-                </div>
-        </section>
+      <section class="centralizar">
+        <div class="calculadora centralizar">
+          <h2>Calculadora</h2>
+          <p id="resultado"></p>
+          <table>
+            <tr>
+              <td><button onclick="clean()">C</button></td>
+              <td><button onclick="back()">&lt;</button></td>
+              <td><button onclick="insert('/')">&#247;</button></td>
+              <td><button onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="insert('7')">7</button></td>
+              <td><button onclick="insert('8')">8</button></td>
+              <td><button onclick="insert('9')">9</button></td>
+              <td><button onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="insert('4')">4</button></td>
+              <td><button onclick="insert('5')">5</button></td>
+              <td><button onclick="insert('6')">6</button></td>
+              <td><button onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="insert('1')">1</button></td>
+              <td><button onclick="insert('2')">2</button></td>
+              <td><button onclick="insert('3')">3</button></td>
+              <td class="buttonBarra" rowspan="2">
+                <button onclick="calcular()">=</button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><button onclick="insert('0')">0</button></td>
+              <td><button onclick="insert('.')">.</button></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h3>Curiosidades:</h3>
+        <div class="triviaTextos">
+          <p id="ondeSeraExibido">
+            "A primeira calculadora mecânica foi inventada por Blaise Pascal, um
+            matemático francês, quando ele tinha 19 anos em 1642, para ajudar
+            seu pai a calcular somas matemáticas."
+          </p>
+          <p class="cur">
+            "A primeira calculadora mecânica foi inventada por Blaise Pascal, um
+            matemático francês, quando ele tinha 19 anos em 1642, para ajudar
+            seu pai a calcular somas matemáticas."
+          </p>
+          <p class="cur">
+            "A primeira calculadora de mão foi inventada pela Texas Instruments,
+            uma empresa americana, em 1967, e foi desenvolvclassa no início dos
+            anos 1970."
+          </p>
+          <p class="cur">
+            "Os alunos da escola são usuários comuns de calculadoras, usando-as
+            para calcular somas difíceis, embora alguns digam que as crianças
+            são muito dependentes dos dispositivos."
+          </p>
+          <p class="cur">
+            "As calculadoras geralmente são alimentadas com energia química ou
+            de bateria, energia solar ou energia elétrica."
+          </p>
+          <p class="cur">
+            "Os tipos de calculadoras variam de pequenas de bolso a grandes e
+            pesadas que podem imprimir os cálculos."
+          </p>
+          <p class="cur">
+            "Os <em>ábacos</em> foram os primeiros tipos de calculadoras,
+            auxiliando a pessoa que estava calculando, mas nos países
+            ocidentais, as calculadoras eletrônicas são quase sempre usadas."
+          </p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
