@@ -4,6 +4,8 @@ https://user-images.githubusercontent.com/103221476/166855949-39a32269-4e90-4470
 
 </div>
 
+<h2>Link: <a href="https://calculadora-javascript-ecru.vercel.app/"> ACESSO </a></h2>
+
 <h2>Sobre:</h2>
   Calculadora pessoal feita em HTML, CSS E Javascript puro. Meu primeiríssimo projeto pessoal que, apesar de muito simples, tenho muito orgulho de ter conseguido executar depois de tanto estudo. Tomei a liberdade de inserir algumas decorações pra personalizar o projeto ainda mais, como a inserção de uma trivia sobre a história da calculadora na sociedade e seu impacto no mundo.
 
